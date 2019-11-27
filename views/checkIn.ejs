@@ -1,0 +1,41 @@
+<%- include("./common/header.ejs") %>
+    <!-- Default form contact -->
+    <div class="row d-flex justify-content-center mt-5">
+    <form class="text-center border border-light p-5 w-50 col-md-5" action="/checkIn" method="POST">
+    
+        <p class="h4 mb-4">Checking In</p>
+
+        <!-- Name -->
+        <label>Visitor</label>
+        <input type="text" required id="defaultContactFormName" class="form-control mb-4" name="nameV" placeholder="Name">
+        
+        <!-- Email -->
+        <input type="email" required id="defaultContactFormEmail" class="form-control mb-4" name="emailV" placeholder="E-mail">
+        <input type="number" required id="defaultContactFormEmail" class="form-control mb-4" name="mobileV" placeholder="Mobile">
+    
+        <!-- Subject -->
+        <label>Host</label>
+        <!-- <select class="browser-default custom-select mb-4">
+            <option value="" disabled>Choose option</option>
+            <option value="1" selected>Feedback</option>
+            <option value="2">Report a bug</option>
+            <option value="3">Feature request</option>
+            <option value="4">Feature request</option>
+        </select> -->
+        <input type="text" required id="defaultContactFormName" class="form-control mb-4" name="nameH" placeholder="Name">
+        
+        <!-- Email -->
+        <input type="email" required  id="defaultContactFormEmail" class="form-control mb-4" name="emailH" placeholder="E-mail">
+        <input type="number" required  id="defaultContactFormEmail" class="form-control mb-4" name="mobileH" placeholder="Mobile">
+        <!-- Message -->
+        
+    
+        
+    
+        <!-- Send button -->
+        <button class="btn btn-info btn-block" type="submit">Send</button>
+    
+    </form>
+    <!-- Default form contact -->
+
+<%- include("./common/footer.ejs") %>

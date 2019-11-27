@@ -1,0 +1,24 @@
+{
+	"name": "gate_management",
+	"version": "1.0.0",
+	"description": "for applying for internship at summergeek",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm start",
+		"start": "node index.js"
+	},
+	"author": "Tejendra Pal Singh",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.1"
+	},
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"ejs": "^3.0.1",
+		"express": "^4.17.1",
+		"mongoose": "^5.7.12",
+		"nexmo": "^2.5.1",
+		"nodemailer": "^6.3.1",
+		"nodemailer-sendgrid-transport": "^0.2.0"
+	}
+}

@@ -1,0 +1,29 @@
+`<div class="card">
+    
+        <!-- Card image -->
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+    
+        <!-- Card content -->
+        <div class="card-body">
+    
+            <!-- Title -->
+            <h2 class="card-title"><a>Your have a visitor</a></h4>
+            <!-- Text -->
+            <p class="card-text">Meeting with Tejendra Pal Singh</p>
+            <p class="note note-primary">
+                <Strong>Name   </Strong>        Aman Singh<br>
+                <Strong>Email  </Strong>        amansingh@gmail.com<br>
+                <Strong>mobile  </Strong>       12312312312<br>
+                <Strong>Date    </Strong>       13/12/19<br>
+                <Strong>CheckInTime </Strong>   6:30pm<br>
+                <p class="note note-success">
+                
+                <Strong>Host Name</Strong> Tejendra Pal Singh<br>
+                <Strong>Host Contact</Strong> 8318724468<br>
+                <Strong>Host mobile</Strong>  tejendrapalsingj11@gmail.com<br>
+            </p>
+            <!-- Button -->
+           
+        </div>
+    
+    </div>`

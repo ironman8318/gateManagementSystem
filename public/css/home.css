@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #ff9361;
+    padding: 1rem;
+}
+
+.secondaryNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    /* display: block; */
+    margin-top: 4rem;
+    background-color: #fcff55;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+}
+
+@media (min-width: 600px) {
+    .form {
+        width: 30%;
+    }
+}
+
+@media (max-width: 400px) {
+    .form {
+        width: 99%;
+    }
+}
+
+.form input {
+    display: block;
+    margin-bottom: 1rem;
+    padding: .4rem;
+    padding-left: 1rem;
+    border-radius: 100rem;
+    outline: none;
+    /* width: 80%; */
+}
+
+input::placeholder {
+    font-size: .7rem;
+    color: rgb(22, 153, 10);
+}
+
+.formHeading {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(29, 90, 5);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+
+.button {
+    width: 30%;
+    height: 2rem;
+    border-radius: 100px;
+    margin-right: 1.3rem;
+    outline: none;
+    background-color: rgb(103, 248, 45);
+}
+
+.link {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.link:active {
+    color: yellowgreen;
+}
+
+.link:hover {
+    color: green;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #ff9361;
+    padding: 1rem
+}
+
+.secondaryNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonArea {
+    margin-top: 10rem;
+    background-color: #fcff55;
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.checkIn, .checkOut {
+    width: 30%;
+    height: 2rem;
+    border-radius: 100px;
+    margin-right: 1.3rem;
+    outline: none;
+    background-color: rgb(103, 248, 45)
+}
+
+.link {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.link:active {
+    color: yellowgreen;
+}
+
+.link:hover {
+    color: green;
+}

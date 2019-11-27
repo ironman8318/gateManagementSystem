@@ -1,0 +1,53 @@
+<%- include("./common/header.ejs") %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+
+
+
+
+</style>
+<main class="guestList container">
+    <div class="list row mt-5">
+         <% if(guests.length==0) { %>
+            <p>No one is currently checked in. Click here to <a href="/checkIn">CheckIn</a></p>
+        <% }else { %>
+        <% for(let guest of guests) { %> 
+            <% if(!guest.checkedOut) { %>
+            <div class="card col-md-4">
+            <% var a = false %>
+                <div class="card-body">
+                    <h5 class="card-title"><%= guest.visitorName %></h5>
+                    <p class="card-text">Host - <%= guest.hostName %></p>
+                    <a class="card-link">Check in - <%= guest.visitorCheckIn %></a>
+                    <!-- Button trigger modal -->
+                    <script>
+                        var b = document.getElementById("<%=guest.visitorEmail%><%guest.visitorCheckIn%>")
+                        b.addEventListener(onclick, () => {
+                            a = alert("<%=guest.visitorName%>" + "checking Out?");
+                        })
+                    </script>
+                  
+                    <form class="mt-2"  method="POST" action="/checkOut"><input type="hidden" value="<%= guest._id %>"
+                    name="leavingGuest"><button type="submit" id="<%=guest.visitorEmail%><%guest.visitorCheckIn%>" class="btn btn-outline-primary p-1">Check Out</button></form>
+
+                    
+                    
+                  
+                </div>
+                </div>
+            <% } %>
+            
+        <% } %>
+        <% } %>
+    </div>
+
+
+
+</main>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+<%- include("./common/footer.ejs") %>
